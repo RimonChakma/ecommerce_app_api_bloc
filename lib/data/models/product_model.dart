@@ -37,7 +37,7 @@ class Product extends Equatable {
   final int stock;
   final int star;
   final String remark;
-  final int categoreId;
+  final int cetagoryId;
   final int brandId;
   final Brand brand;
   final Cetagories cetagories;
@@ -53,7 +53,7 @@ class Product extends Equatable {
     required this.stock,
     required this.star,
     required this.remark,
-    required this.categoreId,
+    required this.cetagoryId,
     required this.brandId,
     required this.brand,
     required this.cetagories,
@@ -71,7 +71,7 @@ class Product extends Equatable {
       stock: json["stock"],
       star: json["star"],
       remark: json["remark"],
-      categoreId: json["cetagore_id"],
+      cetagoryId: json["cetagoryId"],
       brandId: json["brand_id"],
       brand: Brand.fromJson(json["brand"]),
       cetagories: Cetagories.fromJson(json["cetagories"]),
@@ -90,7 +90,7 @@ class Product extends Equatable {
     stock,
     star,
     remark,
-    categoreId,
+    cetagoryId,
     brandId,
     brand,
     cetagories,
